@@ -1,0 +1,11 @@
+.env
+.venv/
+wandb/
+saved_objects/
+.vscode/
+data/__pycache__/
+tests/__pycache__/
+models/__pycache__/
+libraries/__pycache__/
+models/__pycache__/GNNModel.cpython-310.pyc
+*.sh

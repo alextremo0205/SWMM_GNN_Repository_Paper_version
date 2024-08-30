@@ -1,0 +1,65 @@
+# Data settings
+network: 'Tuindorp development - 1 min resolution'
+use_saved_training_windows  : True
+use_saved_validation_windows: True
+
+# Hot start options
+## Names of saved windows in saved objects/saved windows/{network}/ in pickle format.
+training_windows_names:
+  - 'tra_windows_9be_2ah_40_events.pk'
+  - 'tra_windows_9be_10ah_40_events.pk'
+validation_windows_name : 'val_windows_9be_50ah_29_events.pk'
+
+## Use of Transfer Learning
+use_pre_trained_weights: True
+requires_freezing: False
+pre_trained_weights: 'Best_model_NN_GINEConv_NN.pt' #If use_pre_trained_weights is false, this line is ignored
+
+use_saved_normalizer: True
+normalizer_name: "normalizer_development_tuindorp.pk"
+
+# Training settings
+trainer_name: 'Trainer_Heads'
+node_loss_weight: 1
+edge_loss_weight: 1
+
+abs_flows: False
+
+#Hyperparameters
+epochs                 : 100
+switch_epoch           : 50       # After this epoch, the length of the training window increases. This is for curriculum learning.
+
+min_expected_loss      : 100      # Expected minimum validation loss. It prevents continue training models that diverged.
+
+balance_ratio          : 4
+batch_size             : 32
+edge_input_list        : 'length, geom_1'
+gamma_loss             : 1.00
+gamma_scheduler        : 1.00
+hidden_dim             : 32
+learning_rate          : 0.00194
+model_name             : "NN_GINEConv_NN"
+n_hidden_layers        : 0
+non_linearity          : "PReLU"
+num_events_training    : 100
+num_events_validation  : 30
+prediction_steps       : 1
+seed                   : 5
+skip_alpha             : 0.8
+steps_behind           : 9
+steps_ahead            : 
+  - 2
+  - 10
+steps_ahead_validation : 50
+weight_decay           : 0.01
+variance_threshold     : 0.005
+
+# GNN specific hyperparameters
+k_hops                 : 1
+eps_gnn                : 0.5
+
+# Results
+nodes_to_plot:
+  - "j_90679"
+  - "j_90575"
+  - "j_90550"

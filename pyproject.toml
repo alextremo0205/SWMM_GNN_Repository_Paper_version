@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "trial"
+version = "0.1.0"
+description = ""
+authors = ["Alexander Garzón <j.a.garzondiaz@tudelft.nl>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.2.2"
+numpy = "^1.26.4"
+torch-geometric = "^2.5.2"
+wandb = "^0.16.6"
+pillow = "^10.3.0"
+scikit-learn = "^1.4.2"
+python-dotenv = "^1.0.1"
+swmmtoolbox = "^4.0.13"
+matplotlib = "^3.9.0"
+nbformat = "^5.10.4"
+h5py = "^3.11.0"
+torch = {version = "^2.3.1+cu121", source = "pytorch-gpu"}
+ipykernel = "^6.29.5"
+
+
+[tool.poetry.dev-dependencies]
+pygit2 = "^1.14.1"
+plotly = "^5.20.0"
+ipykernel = "^6.29.4"
+ipywidgets = "^8.1.2"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+jupyter-black = "^0.3.4"
+
+
+[[tool.poetry.source]]
+name = "pytorch-gpu"
+url = "https://download.pytorch.org/whl/cu121"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

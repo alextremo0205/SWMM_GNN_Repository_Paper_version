@@ -1,0 +1,40 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  SWMM GNN - Machine Learning Metamodels for Urban Drainage Systems with SWMM
+message: >-
+  This software is for the development of a machine learning surrogate model of the software Storm Water Management Model (SWMM). 
+
+type: software
+authors:
+  - given-names: Alexander
+    family-names: Garzón Díaz
+    email: j.a.garzondiaz@tudelft.nl
+    affiliation: TU Delft
+    orcid: 'https://orcid.org/0000-0002-0012-7293'
+repository-code: 'https://github.com/alextremo0205/SWMM_GNN_Repository_Paper_version'
+abstract: >-
+  This repository contains the code for creating a metamodel
+  of EPA-SWMM using Graph Neural Networks.
+
+  The functionality of the code in this repository includes:
+
+  - SWMM dataset generation: Creates a dataset of SWMM simulations divided into training, validation and testing. 
+  - Machine Learning Experimentation: It loads the data, normalizes the features, trains the models, and visualizes the results. 
+    - It comes with two coded models, Graph Neural Network architecture (GNN), and the Multilayer Perceptron (MLP) architecture (as benchmark)
+  - Testing: Calculates the performance of these models in the test dataset.
+keywords:
+  - Urban drainage systems
+  - SWMM
+  - GNN
+  - Graph neural networks
+  - Machine learning
+  - Time series
+  - Metamodel
+  - Surrogate model
+license: MIT
+# commit: 403abbafb
+version: 0.1.0
+date-released: '2024-08-30'
