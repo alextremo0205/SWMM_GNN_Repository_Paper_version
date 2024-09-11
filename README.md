@@ -268,7 +268,7 @@ The main notebook for testing the models is **[Model testing](notebooks/Model_te
 Please cite our paper as:
 
 ```lang-txt
-@article{,
+@article{
    author = {Alexander Garzón and Zoran Kapelan and Jeroen Langeveld and Riccardo Taormina},
    doi = {https://doi.org/10.1016/j.watres.2024.122396},
    issn = {0043-1354},
