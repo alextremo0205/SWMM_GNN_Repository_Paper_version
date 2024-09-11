@@ -195,6 +195,7 @@ class MLExperiment:
         self.min_expected_loss = self.config["min_expected_loss"]
         self.use_saved_normalizer = self.config["use_saved_normalizer"]
         self.normalizer_name = self.config["normalizer_name"]
+        self.saved_normalizer_name = self.config["saved_normalizer_name"]
 
         self.seed = self.config["seed"]
 
@@ -263,9 +264,9 @@ class MLExperiment:
             self.normalizer = utils.load_pickle(
                 Path(self.saved_objects_dir)
                 / "saved_normalizers"
-                / self.normalizer_name
+                / self.saved_normalizer_name
             )
-            print("Using saved normalizer: ", self.normalizer_name)
+            print("Using saved normalizer: ", self.saved_normalizer_name)
 
             self.normalizer.name_nodes = self.validation_windows[0].name_nodes
 

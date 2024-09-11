@@ -16,7 +16,8 @@ requires_freezing: False
 pre_trained_weights: 'Best_model_NN_GINEConv_NN.pt' #If use_pre_trained_weights is false, this line is ignored
 
 use_saved_normalizer: True
-normalizer_name: "normalizer_development_tuindorp.pk"
+saved_normalizer_name: "normalizer_development_tuindorp.pk"
+normalizer_name: "Normalizer"
 
 # Training settings
 trainer_name: 'Trainer_Heads'
