@@ -2,12 +2,10 @@
 
 ### Paper repository for "Transferable and Data Efficient Metamodeling of Storm Water System Nodal Depths Using Auto-Regressive Graph Neural Networks"
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5555555.svg)](https://doi.org/10.5281/zenodo.????)
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 <!-- Use scikit-learn README as guideline -->
-(Version 1.1.0 - Aug. 28th, 2024)
+(Version 1.2.0 - Sept. 11th, 2024)
 
 This repository contains the code for developing machine learning metamodels of SWMM.
 
@@ -21,13 +19,18 @@ The data is organized in windows and normalized before entering the artificial n
 
 </details>
 
-This code is linked to the paper "Transferable and Data Efficient Metamodeling of Storm Water System Nodal Depths Using Auto-Regressive Graph Neural Networks" by Alexander Garzón, Zoran Kapelan, Jeroen Langeveld, and Riccardo Taormina.
+This code is linked to the paper ["Transferable and Data Efficient Metamodeling of Storm Water System Nodal Depths Using Auto-Regressive Graph Neural Networks"](https://doi.org/10.1016/j.watres.2024.122396) by Alexander Garzón, Zoran Kapelan, Jeroen Langeveld, and Riccardo Taormina.
 
 ## Table of Contents
 
 - [Functionality](#functionality)
 - [Installation](#installation)
+- [Usage](#usage)
+- [ML Experiment](#ml-experiment)
+- [Testing](#testing)
 - [Current limitations](#current-limitations)
+- [Citation](#citation)
+- [Acknowledgements](#acknowledgements)
 - [Licensing and waiver](#licensing-and-waiver)
 
 
@@ -265,8 +268,25 @@ The main notebook for testing the models is **[Model testing](notebooks/Model_te
 Please cite our paper as:
 
 ```lang-txt
+@article{,
+   author = {Alexander Garzón and Zoran Kapelan and Jeroen Langeveld and Riccardo Taormina},
+   doi = {https://doi.org/10.1016/j.watres.2024.122396},
+   issn = {0043-1354},
+   journal = {Water Research},
+   keywords = {Deep learning,Machine learning,SWMM,Surrogate modelling,Transfer learning,Urban drainage},
+   pages = {122396},
+   title = {Transferable and data efficient metamodeling of storm water system nodal depths using auto-regressive graph neural networks},
+   url = {https://www.sciencedirect.com/science/article/pii/S0043135424012958},
+   year = {2024},
+}
 
 ```
+
+## Acknowledgements
+
+This work is supported by the TU Delft AI Labs programme.
+
+This repository was supported by the Digital Competence Centre, Delft University of Technology.
 
 ## Licensing and waiver
 
