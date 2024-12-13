@@ -112,7 +112,7 @@ You must set up the paths according to your system.
 ### Dataset generation
 
 #### Reproducing the case study 
-In case you want to reproduce the models for the case study, you can find all the data used in the study in this [link](<https://doi.org/10.4121/fec1e3de-9586-4a61- 649b3a1-02382592e52c>). Otherwise, you can generate the data by following the instructions below.
+In case you want to reproduce the models for the case study, you can find all the data used in the study in this [link](<https://data.4tu.nl/datasets/fec1e3de-9586-4a61-b3a1-02382592e52c/1>). Otherwise, you can generate the data by following the instructions below.
 
 #### Required data
 
